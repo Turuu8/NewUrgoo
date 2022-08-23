@@ -1,0 +1,16 @@
+.cartCss{
+    width: 200px;
+    height: 400px; 
+    background-color: white;
+    margin: 10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.cartCss img {
+    width: 100%;
+    height: 80%;
+}
+.cartCss h2{
+    margin: 0;
+    text-align: center;
+}
