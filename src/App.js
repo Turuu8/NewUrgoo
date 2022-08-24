@@ -1,8 +1,9 @@
 import './index.css';
 import { Header } from './pages/Header';
-import { Routes  ,Router, Route } from 'react-router-dom'
+import { Routes , Route } from 'react-router-dom'
 import { HomePageBody } from './pages/HomeBody/From';
 import { FirstMovie } from './pages/FirstMovie/From';
+import { useMoviesContext } from './context/List';
 
 const HomePage = () => {
     const style = {
@@ -20,10 +21,14 @@ const HomePage = () => {
 }
 
 function App() {
+  // const {e ,i} = useMoviesContext()
+  // console.log(e.name)
   return (
     <Routes>
       <Route path='/' element={<HomePage />} ></Route>
-      <Route path='/Top%20Gun' element={<FirstMovie />}></Route>
+      <Route path='/0' element={<FirstMovie />}></Route>
+      {/* <Route path={`/${data.name}`} element={<NextMovie />}></Route>
+      <Route path={`/${data.name}`} element={<LastMovie />}></Route> */}
     </Routes> 
   );
 }
