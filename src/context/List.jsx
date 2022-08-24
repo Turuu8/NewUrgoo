@@ -3,14 +3,12 @@ import { datas } from "../datas/data";
 
 const MoviesContext = createContext();
 
-export const MovieProvider = (props) => {
-    const {children} = props;
-    return datas.map((e ,i) => {
-        return (
-            <MoviesContext.Provider value={{e ,i}}>
+export const MovieProvider = ({children}) => {
+    const newData = Array.from(datas);
+    return (
+        <MoviesContext.Provider value={{newData}}>
              {children}   
-            </MoviesContext.Provider>
-        )
-    })
+        </MoviesContext.Provider>
+    )
 }
 export const useMoviesContext = () => useContext(MoviesContext)

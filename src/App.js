@@ -21,14 +21,13 @@ const HomePage = () => {
 }
 
 function App() {
-  // const {e ,i} = useMoviesContext()
-  // console.log(e.name)
+  const data = useMoviesContext()
+  const movies = data.newData;
+
   return (
     <Routes>
-      <Route path='/' element={<HomePage />} ></Route>
-      <Route path='/0' element={<FirstMovie />}></Route>
-      {/* <Route path={`/${data.name}`} element={<NextMovie />}></Route>
-      <Route path={`/${data.name}`} element={<LastMovie />}></Route> */}
+      <Route path='/' exact element={<HomePage />}></Route>
+      <Route path='/movies/about' element></Route>
     </Routes> 
   );
 }

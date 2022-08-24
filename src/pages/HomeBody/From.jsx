@@ -10,11 +10,13 @@ export const HomePageBody = () => {
                 <span className='cartPart'> 
                 {
                     datas.map((e , i) => {
-
+                        // console.log("=======",e)
                         return(
                             <div key={i}>
-                                <Link to = {`/${i}`}>
+                                <button>
                                     <MoviesCart data={e} key={i}/>
+                                </button>
+                                <Link to = '/movies/about'>
                                 </Link>
                             </div>
                         )
