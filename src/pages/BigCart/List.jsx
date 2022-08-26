@@ -1,12 +1,14 @@
-import { useMoviesListContext } from "../HomeBody/From"
-
-export const MoviesBigCart = (props) => {
-    const data = useMoviesListContext();
-    console.log(data)
+import './List.css'
+import { useContext } from "react";
+import { MoviesContext } from "../../context/MoviesContext";
+export const MoviesBigCart = () => {
+    const {userWantedMovie}=useContext(MoviesContext);
+    console.log("MoviesBigCartDataIRlee",userWantedMovie)
 
     return (
-        <div>
-            <h1>he</h1>
+        <div className="border">
+            <img src={userWantedMovie.image} alt="" />
+            <h1>{userWantedMovie.name}</h1>
         </div>
     )
 }

@@ -1,48 +1,24 @@
 import { Link } from 'react-router-dom'
-import { useMoviesContext } from '../../context/List'
 import { FirstMovie } from '../FirstMovie/From'
 import './From.css'
-import { MoviesCart } from './MoviesCart/List'
-import { createContext , useContext } from "react";
-
-const MovieListContext = createContext();
+import { MoviesCart } from './MoviesCart/List';
+import { datas } from '../../datas/data';
+import { MoviesContext } from '../../context/MoviesContext';
+import { useContext } from 'react';
 
 export const HomePageBody = () => {
-    const data = useMoviesContext()
-    const movies = data.newData;
-    // const MovieListProvider = ({children}) => {
-    //     const Click = () =>{
-
-    //     }
-    //     return (
-    //         <MovieListContext.Provider value={{e}}>
-    //                 {children}   
-    //         </MovieListContext.Provider>
-    //     )
-    // }
-    const Click = (event)  => {
-        movies.map((e , i) => {  
-            if(event===i){
-                const MovieListProvider = ({children}) => {
-                return (
-                    <MovieListContext.Provider value={{e}}>
-                            {children}   
-                    </MovieListContext.Provider>
-                )
-            }
-        }
-    })
-    }
+    const {userWantedMovie,setUserWantedMovie}=useContext(MoviesContext);
+    console.log("userWantedMovie --------",userWantedMovie)
     return (
         <div className="movies">
             <h3>Кино Жагсаалт</h3>
                 <span className='cartPart'> 
                 {
-                    movies.map((e , i) => {
+                    datas.map((e , i) => {
                         return(
                             <div key={i}>
                                 <Link to='/movie/about'>
-                                    <button type='click' onClick={()=> Click(i)}>
+                                    <button type='click'>
                                         <MoviesCart data={e} key={i}/>
                                     </button>
                                 </Link>
@@ -54,5 +30,3 @@ export const HomePageBody = () => {
         </div>
     )
 }
-export default MovieListProvider;
-export const useMoviesListContext = () => useContext(MovieListContext)
