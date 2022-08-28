@@ -1,6 +1,6 @@
 body{
   margin: 0;
-  background-color: #e6e7e8;
+  background-color: black;
 }
 .header{
   width: 100%;
@@ -8,24 +8,33 @@ body{
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border-bottom: 1px solid rgb(213, 213, 213)
+  border-bottom: 1px solid rgb(67, 67, 67)
 }
 .urguuLogo{
   width: 100px;
   height: 100px;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Urgoo_cinemas_Logo.png/800px-Urgoo_cinemas_Logo.png);
+  background-image: url(data:image/png;base64,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);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
 }
-.header div{
+.jumpLink{
+  position: relative;
   font-weight: bold;
   display: flex;
   align-items: center;
   justify-content: center;
-  text-decoration: none;
-  color: black;
+  color: white;
+  letter-spacing: 3px;
   font-size: 1.2em;
+  font-family: 'Fira Sans', sans-serif;;
+  transition: 0.5s;
+}
+.jumpLink:hover{
+  filter:drop-shadow(0 0 20px white);
+  border-bottom: 3px solid white;
+  scale: 1;
+  letter-spacing: 4px;
 }
 a{
   text-decoration: none;

@@ -7,16 +7,16 @@ export const Header = () => {
                 <div className='urguuLogo'></div>
             </Link>
             <Link to='/'>
-                <div>Эхлэл</div>
+                <div className='jumpLink'>Эхлэл</div>
             </Link>
             {/* <Link> */}
-                <div>Тун удахгүй</div>
+                <div className='jumpLink'>Тун удахгүй</div>
             {/* </Link>
             <Link> */}
-                <div>Захиалага</div>
+                <div className='jumpLink'>Захиалага</div>
             {/* </Link>
             <Link> */}
-                <div>ҮНЭ УРАМШУУЛАЛ</div>
+                <div className='jumpLink'>ҮНЭ УРАМШУУЛАЛ</div>
             {/* </Link> */}
         </div>
     )

@@ -1,6 +1,6 @@
 import { Header } from "../Header"
 import './From.css'
-import { MoviesBigCart } from "../BigCart/List";
+import { MoviesBigCart } from "./BigCart/List";
 
 export const FirstMovie = () => {
     const style = {

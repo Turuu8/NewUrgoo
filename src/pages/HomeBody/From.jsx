@@ -18,7 +18,7 @@ export const HomePageBody = () => {
                         return(
                             <div key={i}>
                                 <Link to='/movie/about'>
-                                    <button type='click'>
+                                    <button className='jumpMovie' type='click'>
                                         <MoviesCart data={e} key={i}/>
                                     </button>
                                 </Link>

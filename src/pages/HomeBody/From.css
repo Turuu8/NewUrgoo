@@ -5,7 +5,7 @@
     padding: 20px;
     box-sizing: border-box;
 }
-h3{
+.movies h3{
     text-align: center;
 }
 .cartPart{
@@ -14,7 +14,7 @@ h3{
     text-decoration: none;
     color: black;
 }
-button{
+.jumpMovie{
     padding: 0;
     width: 200px;
     height: 400px; 

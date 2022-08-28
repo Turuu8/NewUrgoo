@@ -1,0 +1,61 @@
+.reviem {
+    width: 100%;
+    text-align: center;
+    margin-left: 5%;
+    height: 100%;
+}
+
+.reviem h4 {
+    margin: 0 5% ;
+    font-size: 1.25em;
+}
+
+.alert{
+    font-size: 1.3em;
+    letter-spacing: 1.5px;
+}
+
+.adultEntry {
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+
+.childrenEntry{
+    display: flex;
+    justify-content:  center;
+    align-items: center;
+}
+
+.personNumber{
+    margin-left: 5%;
+    display: flex;
+    /* border: 1px solid white; */
+}
+.personNumber div{
+    display: flex;
+    align-items: center;
+    justify-content: center ;
+    width: 30px;
+    margin: 0 5px;
+    color: black;
+    background-color: white;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;;
+    letter-spacing: 2px;
+    box-shadow:  0 0 5px white;
+}
+.personNumber button{
+    border:none;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    font-size: 1.5em;
+    width: 30px;
+    height: 30px;
+    transition: 0.5s;
+    text-align: center;
+}
+.personNumber button:hover{
+    box-shadow:  0 0 5px white;
+}
