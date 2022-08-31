@@ -6,13 +6,6 @@ import { BackButtonPage } from '../../BackButton/BackButton';
 export const MoviesBigCart = () => {
     const { userWantedMovie } = useContext(MoviesContext);
 
-    const Entry = () => {
-        // const [] = useState()
-        return (
-            <h1>hello</h1>
-        )
-    }
-
     return (
         <div className="border">
             <img className='movieImg' src={userWantedMovie.image} alt="" />
@@ -20,7 +13,7 @@ export const MoviesBigCart = () => {
                 <h1>{userWantedMovie.name}</h1>
                 <span>{userWantedMovie.event}</span>
                 <Link to= '/movie/about/reserved'> 
-                    <button className='reservedButton' onClick={() => Entry()} >Захиалах</button>
+                    <button className='reservedButton' >Захиалах</button>
                 </Link>
                 <Link to='/'>
                     <BackButtonPage />

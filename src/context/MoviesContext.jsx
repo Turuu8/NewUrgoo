@@ -6,7 +6,7 @@ export const MoviesContext=createContext();
 
 export const MoviesContextProvider=({children})=>{
     const [userWantedMovie,setUserWantedMovie]=useState('');
-    console.log(userWantedMovie,"userWantedMovie")
+
     return(
         <MoviesContext.Provider value={{userWantedMovie,setUserWantedMovie}}>
             {children}

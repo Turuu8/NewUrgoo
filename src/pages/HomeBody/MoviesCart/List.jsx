@@ -7,7 +7,6 @@ import { MoviesBigCart } from "../../FirstMovie/BigCart/List"
 import { useContext } from "react"
 export const MoviesCart = (props) => {
     const { setUserWantedMovie } = useContext(MoviesContext);
-    const detail = document.getElementsByClassName("detail")[0]
     return (
         <div className="cartCss">
             <img onClick={() => setUserWantedMovie(props.data)} src={props.data.image} alt="" />

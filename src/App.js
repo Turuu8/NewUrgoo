@@ -4,6 +4,7 @@ import { Routes, Route } from 'react-router-dom'
 import { HomePageBody } from './pages/HomeBody/From';
 import { FirstMovie } from './pages/FirstMovie/From';
 import { Reserved } from './pages/Reserved/Body';
+import { ScreenSelect } from './pages/ScreenSelect/Screeen';
 
 const HomePage = () => {
   const style = {
@@ -26,6 +27,7 @@ function App() {
       <Route path='/' exact element={<HomePage />}></Route>
       <Route path='/movie/about' element={<FirstMovie />}></Route>
       <Route path='/movie/about/reserved' element={<Reserved />}></Route>
+      <Route path='/movie/about/reserved/screenSelect' element={<ScreenSelect />}></Route>
     </Routes>
   );
 }
