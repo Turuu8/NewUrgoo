@@ -42,7 +42,7 @@
     z-index: 1;
     color: black;
     background-color: white;
-    transition: ease-out 2s;
+    transition: ease-out 0.5s;
 }
 .reservedButton:hover{
     cursor: pointer;

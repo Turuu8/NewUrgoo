@@ -22,6 +22,7 @@ export const Reserved = () => {
     const ChildrenAdd = () => childrenSetNumber((childrenNumber) => childrenNumber + 1)
 
     let Price = childrenNumber*7000 + adultNumber*9000
+    let PersonsNumber = childrenNumber + adultNumber
 
     const Next = () => {
         // (Price === 0) ? alert("hunii too oruulaaguu baina") : (<Link to = '/movie/about/reserved/screenSelect'></Link>)

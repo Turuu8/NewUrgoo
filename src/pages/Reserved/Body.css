@@ -71,7 +71,7 @@
     z-index: 1;
     color: black;
     background-color: white;
-    transition: ease-out 2s;
+    transition: ease-out 0.5s;
     margin-top: 5%;
 }
 .next:hover{
@@ -100,4 +100,9 @@
     border: 4px solid white;
     text-shadow: 0 0 20px white;
     box-shadow: 0 0 10px white;
+}
+.seat button{ 
+    width: 10px;
+    height: 10px;
+    background-color: white;
 }

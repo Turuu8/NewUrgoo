@@ -28,7 +28,7 @@ body{
   letter-spacing: 3px;
   font-size: 1.2em;
   font-family: 'Fira Sans', sans-serif;;
-  transition: 0.5s;
+  transition: 0.4s;
 }
 .jumpLink:hover{
   filter:drop-shadow(0 0 20px white);
