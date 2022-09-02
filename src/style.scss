@@ -1,0 +1,59 @@
+@import '_helle.scss';
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $background-white;
+}
+@mixin but-bugd {
+    font-family: 'Source Code Pro', Helvetica, Arial;
+    width: 100px;
+    height: 50px;
+    border: none;
+    margin: 5px 10px 10px 0
+  }
+.btn-primary {
+    @include but-bugd();
+    background-color: $primary;
+    color: $background-white;
+}
+.btn-secondary {
+    @include but-bugd();
+        border: 1px solid $primary;
+        color: $primary;
+}
+.btn-disabled{
+    @include but-bugd();
+        background-color: $disabled;
+        color: $background-white;
+}
+
+.btn-success{
+    @include but-bugd();
+        background-color: $success;
+        color: $background-white;
+}
+
+.btn-delete{
+    @include but-bugd();
+        background-color: $delete;
+        color: $background-white;
+}
+
+@each $key , $color in $colors {
+    .box-#{$key} {
+        display: inline-block;
+        background-color: $color;
+        width: 100px;
+        height: 50px;
+    }
+}
+@each $key , $color in $secondary {
+    .box-#{$key} {
+        display: inline-block;
+        background-color: $color;
+        width: 100px;
+        height: 50px;
+    }
+}

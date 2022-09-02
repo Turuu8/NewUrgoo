@@ -1,0 +1,131 @@
+h1,
+h2 {
+  border-bottom: 2px solid green;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+}
+
+.btn-primary {
+  font-family: "Source Code Pro", Helvetica, Arial;
+  width: 100px;
+  height: 50px;
+  border: none;
+  margin: 5px 10px 10px 0;
+  background-color: #0080f0;
+  color: white;
+}
+
+.btn-secondary {
+  font-family: "Source Code Pro", Helvetica, Arial;
+  width: 100px;
+  height: 50px;
+  border: none;
+  margin: 5px 10px 10px 0;
+  border: 1px solid #0080f0;
+  color: #0080f0;
+}
+
+.btn-disabled {
+  font-family: "Source Code Pro", Helvetica, Arial;
+  width: 100px;
+  height: 50px;
+  border: none;
+  margin: 5px 10px 10px 0;
+  background-color: #b6d1da;
+  color: white;
+}
+
+.btn-success {
+  font-family: "Source Code Pro", Helvetica, Arial;
+  width: 100px;
+  height: 50px;
+  border: none;
+  margin: 5px 10px 10px 0;
+  background-color: #00baa8;
+  color: white;
+}
+
+.btn-delete {
+  font-family: "Source Code Pro", Helvetica, Arial;
+  width: 100px;
+  height: 50px;
+  border: none;
+  margin: 5px 10px 10px 0;
+  background-color: #ff7870;
+  color: white;
+}
+
+.box-B200 {
+  display: inline-block;
+  background-color: #0084f8;
+  width: 100px;
+  height: 50px;
+}
+
+.box-B400 {
+  display: inline-block;
+  background-color: #001B36;
+  width: 100px;
+  height: 50px;
+}
+
+.box-White {
+  display: inline-block;
+  background-color: white;
+  width: 100px;
+  height: 50px;
+}
+
+.box-B100 {
+  display: inline-block;
+  background-color: #58C2F1;
+  width: 100px;
+  height: 50px;
+}
+
+.box-R100 {
+  display: inline-block;
+  background-color: #FF8576;
+  width: 100px;
+  height: 50px;
+}
+
+.box-G100 {
+  display: inline-block;
+  background-color: #47C2B1;
+  width: 100px;
+  height: 50px;
+}
+
+.box-D100 {
+  display: inline-block;
+  background-color: #F0F5F9;
+  width: 100px;
+  height: 50px;
+}
+
+.box-D200 {
+  display: inline-block;
+  background-color: #C9D6Df;
+  width: 100px;
+  height: 50px;
+}
+
+.box-D300 {
+  display: inline-block;
+  background-color: #52616B;
+  width: 100px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

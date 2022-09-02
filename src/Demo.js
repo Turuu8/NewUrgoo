@@ -7,8 +7,7 @@ import { collection,
       updateDoc
      } from "firebase/firestore";
 import { useState, useEffect } from "react";
-import { db } from "./pages/ScreenSelect/Screeen";
-
+import { db } from "./FireBase/Fire";
 
 export const Demo = () => {
     const [newName, setNewName] = useState('')

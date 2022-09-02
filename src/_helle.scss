@@ -1,0 +1,29 @@
+$primary: #0080f0;
+$background-white: white;
+$disabled: #b6d1da;
+$success: #00baa8;
+$delete: #ff7870;
+$colors : (B200: #0084f8,
+  B400: #001B36,
+  White: #ffff);
+$secondary : (B100: #58C2F1,
+  R100: #FF8576,
+  G100: #47C2B1,
+  D100: #F0F5F9,
+  D200: #C9D6Df,
+  D300: #52616B,
+);
+
+h1,
+h2 {
+  border-bottom: 2px solid green;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
+// div {
+//   display: flex;
+//   flex-direction: column; 
+// }
